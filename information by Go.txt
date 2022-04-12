@@ -1,0 +1,25 @@
+1. создание n-мерного массива (типо куба)
+N := 7
+	shahmat := make([][]int, N)
+	for i := range shahmat {
+		shahmat[i] = make([]int, N)
+	}
+
+2. вывод каждого элемента двумерного массива в строку
+	shahmat := [8][8]string{
+		{"n", "b", "r", "k", "q", "r", "b", "n"},
+		{"p", "p", "p", "p", "p", "p", "p", "p"},
+		{},
+		{},
+		{},
+		{},
+		{"P", "P", "P", "P", "P", "P", "P", "P"},
+		{"N", "B", "R", "K", "Q", "R", "B", "N"},
+	}
+	var i, j int
+	for i = 0; i < 8; i++ {
+		for j = 0; j < 8; j++ {
+			fmt.Printf("shahmat[%d][%d] = %s\n", i, j, shahmat[i][j])
+		}
+	}
+3. 
