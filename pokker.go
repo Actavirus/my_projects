@@ -1,5 +1,6 @@
 // Учебник: создайте карточную игру с Golang (Go)
 // https://bestprogrammer.ru/programmirovanie-i-razrabotka/uchebnik-sozdajte-kartochnuyu-igru-s-golang-go
+// Разделите массив на наборы из K последовательных чисел
 package main
 import (
 	"fmt"
@@ -12,7 +13,7 @@ func main(){
 
 	hand2 := []int{1, 9, 3, 5, 7, 4, 2, 9, 11}
 	k = 2
-	fmt.Println(isHandOfStraights(hand, k))
+	fmt.Println(isHandOfStraights(hand2, k))
 }
 
 // Шаг 1 : Настройте функцию.
@@ -48,7 +49,7 @@ func isHandOfStraights(hand []int, k int) bool {
 			}
 			// Шаг 5.2 : Когда каждая из требуемых карточек найдена, 
 			// уменьшите количество ее появлений в count.
-			count[current + j] - 1
+			count[current + j] --
 		}
 		// Шаг 5.3 : После того, как будет найдена полная группа, 
 		// используйте цикл while, чтобы найти самую маленькую карту 
