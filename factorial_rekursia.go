@@ -1,7 +1,7 @@
 // Пример 1: Расчет факториала с использованием рекурсии в Go
 // https://coderlessons.com/tutorials/kompiuternoe-programmirovanie/uchis-go-programmirovanie/go-rekursiia
 // В следующем примере вычисляется факториал данного числа с использованием рекурсивной функции 
-package main
+package zadacha1
 import (
 	"fmt"
 )
